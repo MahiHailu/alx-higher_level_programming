@@ -1,6 +1,16 @@
 #!/usr/bin/python3
-# 2-print_alphabet.py
+import random
+number = random.randint(-10000, 10000)
+n = abs(number) % 10
 
-"""Print the alphabet in lowercase, not followed by a new line."""
-for letter in range(97, 123):
-    print("{}".format(chr(letter)), end="")
+if number < 0:
+    n = -n
+
+print("Last digit of {:d} is {:d}".format(number, n), end="")
+
+if n < 6 and n != 0:
+    print(" and is less than 6 and not 0")
+elif n > 5:
+    print(" and is greater than 5")
+else:
+    print(" and is 0")
