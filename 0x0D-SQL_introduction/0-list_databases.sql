@@ -1,2 +1,2 @@
---  A script that lists all databases on a MySQL server.
-VIEW DATABASES;
+-- Lists all databases of your MySQL server
+SHOW DATABASES;
