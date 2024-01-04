@@ -1,4 +1,4 @@
-#!/usrii/bin/node
+#!/usr/bin/node
 const request = require('request');
 const { argv } = require('process');
 
